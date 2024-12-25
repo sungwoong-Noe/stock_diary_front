@@ -14,6 +14,11 @@ const routes = [
         path: 'create',
         name: 'planning-create',
         component: () => import('../views/planning/CreatePlan.vue')
+      },
+      {
+        path: 'entry-points',
+        name: 'planning-entry-points',
+        component: () => import('../views/planning/EntryPoints.vue')
       }
     ]
   }
