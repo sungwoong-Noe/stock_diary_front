@@ -5,6 +5,23 @@ import AboutView from '../views/AboutView.vue'
 const routes = [
   { path: '/', component: HomeView },
   { path: '/about', component: AboutView },
+  {
+    path: '/planning',
+    name: 'planning',
+    component: () => import('../views/PlanningView.vue'),
+    children: [
+      {
+        path: 'create',
+        name: 'planning-create',
+        component: () => import('../views/planning/CreatePlan.vue')
+      },
+      {
+        path: 'entry-points',
+        name: 'planning-entry-points',
+        component: () => import('../views/planning/EntryPoints.vue')
+      }
+    ]
+  }
 ]
 
 const router = createRouter({

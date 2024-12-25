@@ -12,7 +12,7 @@
         <!-- 메인 컨텐츠 -->
         <main class="flex-1 p-6 lg:pl-64">
           <div class="mx-auto max-w-7xl">
-            <!-- <router-view /> -->
+            <router-view />
           </div>
         </main>
       </div>
